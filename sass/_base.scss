@@ -1,13 +1,13 @@
 :root {
-  $color-dark-desaturated-blue: hsl(238, 29%, 16%);
-  $color-soft-red: hsl(14, 88%, 65%);
-  $color-soft-violet: hsl(273, 75%, 66%);
-  $color-soft-blue: hsl(240, 73%, 65%);
+  --color-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --color-soft-red: hsl(14, 88%, 65%);
+  --color-soft-violet: hsl(273, 75%, 66%);
+  --color-soft-blue: hsl(240, 73%, 65%);
 
-  $color-very-dark-grayish-blue: hsl(237, 12%, 33%);
-  $color-dark-grayish-blue: hsl(240, 6%, 50%);
+  --color-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --color-dark-grayish-blue: hsl(240, 6%, 50%);
 
-  $color-Light-grayish-blue: hsl(240, 5%, 91%);
+  --color-Light-grayish-blue: hsl(240, 5%, 91%);
 }
 
 * {
@@ -30,14 +30,12 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: $color-dark-grayish-blue;
+  color: var(--color-dark-grayish-blue);
   background-image: linear-gradient(
     to top,
-    $color-soft-blue,
-    $color-soft-violet
+    var(--color-soft-blue),
+    var(--color-soft-violet)
   );
   background-size: cover;
   background-repeat: no-repeat;
-
-  min-height: 100vh;
 }
