@@ -29,13 +29,20 @@ body {
   align-items: center;
   justify-content: center; }
 
-figure {
+.desktop,
+.img__desktop {
+  display: unset; }
+
+.img__mobile {
+  display: none; }
+
+.desktop {
   z-index: 2;
   position: absolute;
   transform: translate(-483px, 48px); }
-  figure img {
+  .desktop img {
     transition: transform 0.5s ease-out; }
-    figure img.active {
+    .desktop img.active {
       transform: translate(0, -20px); }
 
 .container {

@@ -1,4 +1,13 @@
-figure {
+.desktop,
+.img__desktop {
+  display: unset;
+}
+
+.img__mobile {
+  display: none;
+}
+
+.desktop {
   z-index: 2;
   position: absolute;
   transform: translate(-483px, 48px);
