@@ -10,19 +10,6 @@
   --color-Light-grayish-blue: hsl(240, 5%, 91%);
 }
 
-$transition-duration: 0.5s;
-
-@mixin Font($font-weight) {
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: $font-weight;
-}
-
-@mixin centerFlex($flex-direction) {
-  display: flex;
-  flex-direction: $flex-direction;
-  align-items: center;
-}
-
 * {
   margin: 0;
   padding: 0;

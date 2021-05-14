@@ -14,17 +14,19 @@
   transform: translate(-48rem, 4.8rem);
 
   img {
-    transition: transform $transition-duration ease-out;
+    transition: transform 0.5s ease-out;
 
     &.active {
-      transform: translate(0, -2rem);
+      transform: translate(-4rem, 0);
     }
   }
 }
 
 /////////////////////////
 .img {
-  @include centerFlex(row);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   overflow: hidden;
   height: 100%;
 
@@ -45,7 +47,7 @@
   font-size: 1.4rem;
 
   h1 {
-    color: hsl(238, 29%, 16%);
+    color: var(--color-dark-desaturated-blue);
     padding: 1rem 0 2rem 0;
     font-size: 2em;
   }
@@ -55,7 +57,7 @@
   }
 
   &__header {
-    color: hsl(237, 12%, 33%);
+    color: var(--color-very-dark-grayish-blue);
     display: flex;
     justify-content: space-between;
     margin: 0.5rem 0 1rem 0;
@@ -63,14 +65,14 @@
     cursor: pointer;
     user-select: none;
 
-    transition: color $transition-duration ease-out;
+    transition: color 0.5s ease-out;
 
     &--icon {
-      transition: transform $transition-duration ease-out;
+      transition: transform 0.5s ease-out;
     }
 
     &:hover {
-      color: hsl(14, 88%, 65%);
+      color: var(--color-soft-red);
     }
 
     &.active {
@@ -83,17 +85,17 @@
   }
 
   &__body {
-    color: hsl(237, 12%, 33%);
+    color: var(--color-very-dark-grayish-blue);
     max-height: 0;
     overflow: hidden;
 
-    transition: max-height $transition-duration ease-out;
+    transition: max-height 0.5s ease-out;
   }
 }
 //////////
 hr {
-  border: 0.5px solid hsl(240, 5%, 91%);
-  background-color: hsl(240, 5%, 91%);
+  border: 0.5px solid var(--color-Light-grayish-blue);
+  background-color: var(--color-Light-grayish-blue);
   margin: 0.7rem 0;
 }
 

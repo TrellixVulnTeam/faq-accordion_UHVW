@@ -1,32 +1,32 @@
-const cardHeadings = document.querySelectorAll(
-  ".accordion__panel .accordion__header"
-);
-const moveableImg = document.querySelector(".atBox");
-var openedCard;
+"use strict";
 
-cardHeadings.forEach((cardHeading) => {
-  cardHeading.addEventListener("click", () => {
-    if (openedCard && openedCard !== cardHeading) {
-      openedCard.classList.remove("active");
-      openedCard.nextElementSibling.style.maxHeight = "0";
+const accordionHeaders = document.querySelectorAll(".accordion__header");
+const cyberBox = document.querySelector(".cyberBox");
+let isOpen;
+
+accordionHeaders.forEach((accordionHeader) => {
+  accordionHeader.addEventListener("click", () => {
+    if (isOpen && isOpen !== accordionHeader) {
+      isOpen.classList.remove("active");
+      isOpen.nextElementSibling.style.maxHeight = "0";
     }
 
-    cardHeading.classList.toggle("active");
-    const cardBody = cardHeading.nextElementSibling;
+    accordionHeader.classList.toggle("active");
+    const accordionBody = accordionHeader.nextElementSibling;
 
-    if (cardHeading.classList.contains("active")) {
-      cardBody.style.maxHeight = cardBody.scrollHeight + "px";
-      openedCard = cardHeading;
+    if (accordionHeader.classList.contains("active")) {
+      accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+      isOpen = accordionHeader;
     } else {
-      cardBody.style.maxHeight = "0";
-      cardBody == null;
+      accordionBody.style.maxHeight = "0";
+      accordionBody == null;
     }
   });
 
-  cardHeading.addEventListener("mouseenter", () =>
-    moveableImg.classList.add("active")
+  accordionHeader.addEventListener("mouseenter", () =>
+    cyberBox.classList.add("active")
   );
-  cardHeading.addEventListener("mouseleave", () =>
-    moveableImg.classList.remove("active")
+  accordionHeader.addEventListener("mouseleave", () =>
+    cyberBox.classList.remove("active")
   );
 });

@@ -3,7 +3,6 @@
   border-radius: 2rem;
 
   display: flex;
-  // flex-direction: row;
   align-items: center;
 
   height: 50rem;
@@ -47,11 +46,11 @@
     transform: translateY(-11rem);
 
     &__body {
-      color: hsl(237, 12%, 33%);
+      color: var(--color-very-dark-grayish-blue);
       max-height: 0;
       overflow: hidden;
 
-      transition: max-height $transition-duration ease-out;
+      transition: max-height 0.5s ease-out;
     }
   }
 
