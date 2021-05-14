@@ -1,7 +1,108 @@
+///////////////////////
+.desktop,
+.img__desktop {
+  display: unset;
+}
+
+.img__mobile {
+  display: none;
+}
+
+.desktop {
+  z-index: 2;
+  position: absolute;
+  transform: translate(-48rem, 4.8rem);
+
+  img {
+    transition: transform $transition-duration ease-out;
+
+    &.active {
+      transform: translate(0, -2rem);
+    }
+  }
+}
+
+/////////////////////////
+.img {
+  @include centerFlex(row);
+  overflow: hidden;
+  height: 100%;
+
+  background: url("../images/bg-pattern-desktop.svg");
+  background-position: -54.5rem 65%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+
+  &__desktop {
+    transform: translateX(-16%);
+  }
+}
+
+/////////////////////////
+.accordion {
+  margin: 1rem 5rem;
+  width: 40rem;
+  font-size: 1.4rem;
+
+  h1 {
+    color: hsl(238, 29%, 16%);
+    padding: 1rem 0 2rem 0;
+    font-size: 2em;
+  }
+
+  &__panel {
+    padding: 0.5rem 0;
+  }
+
+  &__header {
+    color: hsl(237, 12%, 33%);
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0 1rem 0;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition: color $transition-duration ease-out;
+
+    &--icon {
+      transition: transform $transition-duration ease-out;
+    }
+
+    &:hover {
+      color: hsl(14, 88%, 65%);
+    }
+
+    &.active {
+      font-weight: 700;
+
+      .accordion__header--icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__body {
+    color: hsl(237, 12%, 33%);
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height $transition-duration ease-out;
+  }
+}
+//////////
+hr {
+  border: 0.5px solid hsl(240, 5%, 91%);
+  background-color: hsl(240, 5%, 91%);
+  margin: 0.7rem 0;
+}
+
+/////////////////////////
 .attribution {
-  font-size: 11px;
+  padding-top: 3rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #fff;
 }
