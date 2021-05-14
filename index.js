@@ -6,6 +6,7 @@ let isOpen;
 
 accordionHeaders.forEach((accordionHeader) => {
   accordionHeader.addEventListener("click", () => {
+    //////// CLOSE WHEN OTHER HEADER IS SELECTED ///////
     if (isOpen && isOpen !== accordionHeader) {
       isOpen.classList.remove("active");
       isOpen.nextElementSibling.style.maxHeight = "0";
