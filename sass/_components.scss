@@ -1,4 +1,38 @@
 /* ----------- IMAGES ----------- */
+.img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+
+  background: url("../images/bg-pattern-desktop.svg");
+  background-position: -54.5rem 65%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    height: 23rem;
+
+    justify-content: center;
+    overflow: visible;
+
+    background: url("../images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 23rem 10rem;
+    background-position-x: 54%;
+    background-position-y: 9.6rem;
+
+    transform: translateY(-11.3rem);
+  }
+
+  &__desktop {
+    transform: translateX(-16%);
+  }
+}
+
 .desktop,
 .img__desktop {
   display: unset;
@@ -35,39 +69,6 @@
   }
 }
 
-.img {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  overflow: hidden;
-  height: 100%;
-
-  background: url("../images/bg-pattern-desktop.svg");
-  background-position: -54.5rem 65%;
-  background-size: 200%;
-  background-repeat: no-repeat;
-
-  @media (max-width: 1080px) {
-    width: 100%;
-    height: 23rem;
-
-    justify-content: center;
-    overflow: visible;
-
-    background: url("../images/bg-pattern-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: 23rem 10rem;
-    background-position-x: 54%;
-    background-position-y: 9.6rem;
-
-    transform: translateY(-11.3rem);
-  }
-
-  &__desktop {
-    transform: translateX(-16%);
-  }
-}
-
 /* ----------- ACCORDION ----------- */
 .accordion {
   margin: 1rem 5rem;
@@ -75,6 +76,7 @@
   font-size: 1.4rem;
 
   @media (max-width: 1080px) {
+    // margin-top: 25rem;
     width: 90%;
     transform: translateY(-11rem);
   }
@@ -142,6 +144,10 @@ hr {
   padding-top: 3rem;
   font-size: 1.1rem;
   text-align: center;
+
+  @media (max-width: 1080px) {
+    padding: 1rem 0;
+  }
 }
 .attribution a {
   color: #fff;
