@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](.images/screenshot.jpg)
+![](images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/chawissa/faq-accordion)
-- Live Site URL: [Add live site URL here](https://chawissa.github.io/faq-accordion/)
+- Solution URL: [https://github.com/chawissa/faq-accordion]
+- Live Site URL: [https://chawissa.github.io/faq-accordion/]
 
 ## My process
 
