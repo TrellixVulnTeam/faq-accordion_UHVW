@@ -36,10 +36,12 @@ body {
   align-items: center;
   justify-content: center;
   max-width: 90rem;
-  margin: 6rem auto; }
+  height: 55rem;
+  margin: 3rem auto; }
   @media (max-width: 900px) {
     .container {
-      flex-direction: column; } }
+      flex-direction: column;
+      height: initial; } }
 
 /* ----------- IMAGES ----------- */
 .img {
@@ -48,11 +50,10 @@ body {
   align-items: center;
   overflow: hidden;
   height: 100%;
-  position: relative;
   background: url("../images/bg-pattern-desktop.svg");
-  background-position: -54.5rem 65%;
-  background-size: 200%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: -46.5rem 66%;
+  background-size: 200%; }
   @media (max-width: 900px) {
     .img {
       width: 100%;
@@ -61,9 +62,8 @@ body {
       overflow: visible;
       background: url("../images/bg-pattern-mobile.svg");
       background-repeat: no-repeat;
+      background-position: 51% 12.6rem;
       background-size: 23rem 10rem;
-      background-position-x: 51%;
-      background-position-y: 12.6rem;
       transform: translateY(-11.3rem); } }
   .img__desktop {
     transform: translateX(-16%); }
@@ -90,7 +90,7 @@ body {
   top: 34%;
   left: 43%;
   position: absolute;
-  transform: translate(-44rem, 3.6rem); }
+  transform: translate(-44rem, 4.8rem); }
   .desktop img {
     transition: transform 0.5s ease-out; }
     .desktop img.active {

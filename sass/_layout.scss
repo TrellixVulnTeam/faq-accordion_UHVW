@@ -6,11 +6,11 @@
   align-items: center;
   justify-content: center;
   max-width: 90rem;
-  margin: 6rem auto;
+  height: 55rem;
+  margin: 3rem auto;
 
   @media (max-width: 900px) {
     flex-direction: column;
-    // margin: 10vw;
-    // margin-top: 12rem;
+    height: initial;
   }
 }
