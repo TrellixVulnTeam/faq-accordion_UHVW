@@ -12,7 +12,7 @@
   background-size: 200%;
   background-repeat: no-repeat;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 900px) {
     width: 100%;
     height: 23rem;
 
@@ -22,8 +22,8 @@
     background: url("../images/bg-pattern-mobile.svg");
     background-repeat: no-repeat;
     background-size: 23rem 10rem;
-    background-position-x: 54%;
-    background-position-y: 9.6rem;
+    background-position-x: 51%;
+    background-position-y: 12.6rem;
 
     transform: translateY(-11.3rem);
   }
@@ -37,7 +37,7 @@
 .img__desktop {
   display: unset;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 900px) {
     display: none;
   }
 }
@@ -45,7 +45,7 @@
 .img__mobile {
   display: none;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 900px) {
     display: unset;
     position: absolute;
     left: calc(50% - 145px);
@@ -58,7 +58,7 @@
   top: 34%;
   left: 43%;
   position: absolute;
-  transform: translate(-48rem, 4.8rem);
+  transform: translate(-44rem, 3.6rem);
 
   img {
     transition: transform 0.5s ease-out;
@@ -75,7 +75,7 @@
   width: 40rem;
   font-size: 1.4rem;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 900px) {
     // margin-top: 25rem;
     width: 90%;
     transform: translateY(-11rem);
@@ -86,7 +86,7 @@
     padding: 1rem 0 2rem 0;
     font-size: 2em;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 900px) {
       text-align: center;
     }
   }
@@ -145,7 +145,7 @@ hr {
   font-size: 1.1rem;
   text-align: center;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 900px) {
     padding: 1rem 0;
   }
 }
